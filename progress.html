@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Teste Barra de Progresso</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+<body>
+<div class="progress-bar">
+    <div></div>
+</div>
+<span></span>
+<input type="number" onkeyup="alterarProgresso()" />
+    <script>
+ const progress = document.querySelector(".progress-bar div")
+ const input = document.querySelector("input")
+ const alterarProgresso = () => {
+ progress.setAttribute("style", "width: " + input.value + "%");
+
+ }
+
+    </script>
+</body>
+</html>

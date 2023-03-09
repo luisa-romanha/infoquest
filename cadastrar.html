@@ -1,0 +1,105 @@
+<html>
+<head>
+<title>InfoQuest - Cadastro </title>
+<link rel="stylesheet" href="CSS/stylelogin.css">
+</head>
+<body>
+
+
+<!-- <form method="POST" action="login.php">
+<label>Email:</label><input type="text" name="email" id="email"><br>
+<label>Senha:</label><input type="password" name="senha" id="senha"><br>
+<input type="submit" value="entrar" id="entrar" name="entrar"><br>
+Ainda não possui seu cadastro?
+<a href="cadastro.html">Clique aqui para cadastrar-se agora!</a>
+</form> -->
+<!-- Wrapper Area -->
+<div class="wrapper__area" id="wrapper_Area">
+    <!-- Forms Area -->
+    <div class="forms__area">
+      <!-- Sign Up Form -->
+      <form class="sign-up__form" id="signUpForm" method="POST" action="PHP/cadastro.php">
+        <!-- Form Title -->
+        <h1 class="form__title">Cadastre-se!</h1>
+        <!-- inputs Groups -->
+        <div class="input__group">
+          <label class="field">
+            <p class="info__input">Digite seu nome:</p>
+            <input type="text" name="nome" placeholder="Nome" id="nome">
+          </label>
+          <span class="input__icon"><i class="bx bx-user"></i></span>
+          <small class="input__error_message"></small>
+        </div>
+        <div class="input__group">
+          <label class="field">
+            <p class="info__input">Digite seu email:</p>
+            <input type="text" name="email" placeholder="Email@examplo.com" id="email">
+          </label>
+          <span class="input__icon"><i class="bx bx-at"></i></span>
+          <small class="input__error_message"></small>
+        </div>
+        <div class="input__group">
+            <label class="field">
+              <p class="info__input">Escolha um nome de usuário:</p>
+              <input type="text" name="username" placeholder="@Username" id="username">
+            </label>
+            <span class="input__icon"><i class="bx bx-lock"></i></span>
+            <span class="showHide__Icon"><i class="bx bx-hide"></i></span>
+            <small class="input__error_message"></small>
+          </div>
+        <div class="input__group">
+          <label class="field">
+            <p class="info__input">Escolha uma senha:</p>
+            <input type="password" name="senha" placeholder="Senha123$#%&..." id="senha">
+          </label>
+          <span class="input__icon"><i class="bx bx-lock"></i></span>
+          <span class="showHide__Icon"><i class="bx bx-hide"></i></span>
+          <small class="input__error_message"></small>
+        </div>
+        <div class="input__group confirm__group">
+          <label class="field">
+            <input type="password" name="confirma_senha" placeholder="Confirmar senha" id="confirmaSenha">
+          </label>
+          <span class="input__icon"><i class="bx bx-lock"></i></span>
+          <span class="showHide__Icon"><i class="bx bx-hide"></i></span>
+          <small class="input__error_message"></small>
+        </div>
+        <div class="form__actions">
+            <label for="checkboxInput" class="link-terms">
+              <input type="checkbox" id="checkboxInput">
+              <span class="checkmark"></span>
+              <a href="https://locusiuris.com.br/termos-e-condicoes/"><span>Aceito os termos de acordo!</span></a>
+            </label>
+          </div>
+        <!-- Sign Up Button -->
+        <button type="submit" class="submit-button" id="signUpSubmitBtn">Cadastrar</button>
+       
+        <!-- <div class="alternate-login">
+          <div class="link">
+            <i class='bx bxl-google'></i>
+            <span>Google</span>
+          </div>
+          <div class="link">
+            <i class='bx bxl-facebook-circle'></i>
+            <span>Facebook</span>
+          </div>
+        </div> -->
+        
+
+
+      </form> <!-- End Sign Up Form -->
+    </div><!-- End Forms Area -->
+    <!-- Aside Area -->
+    <div class="aside__area" id="aside_Area">
+      <div class="sign-up__aside-info">
+        <h3>Bem-vindo!</h3>
+        <img src="https://e.top4top.io/p_1945sidbp2.png" alt="Image">
+        <p>Já tem uma conta? Faça o seu login.</p>
+        <a href="login.html"><button id="aside_signIn_Btn">Login</button></a>
+      </div>
+    </div>
+  </div>
+  <!-- End Wrapper Area -->
+  
+</body>
+</html>
